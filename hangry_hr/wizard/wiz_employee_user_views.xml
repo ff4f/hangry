@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_wiz_employee_user" model="ir.ui.view">
+        <field name="name">Generate User</field>
+        <field name="model">wiz.employee.user</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="employee_id"/>
+                    <field name="email"/>
+                    <field name="password" widget="password_meter"/>
+                </group>
+                <footer>
+                    <button string="Create User" name="action_create_user" type="object" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_hangry_hr_parttime" model="res.groups">
+        <field name="name">Hangry HR: Parttime Employee</field>
+        <field name="category_id" ref="base.module_category_human_resources_attendances"/>
+        <field name="implied_ids" eval="[(4, ref('hr.group_hr_user')), (4, ref('hr_attendance.group_hr_attendance'))]"/>
+    </record>
+
+    <record id="group_hangry_hr_fulltime" model="res.groups">
+        <field name="name">Hangry HR: Fulltime Employee</field>
+        <field name="category_id" ref="base.module_category_human_resources_attendances"/>
+        <field name="implied_ids" eval="[(4, ref('hr.group_hr_user')), (4, ref('hr_attendance.group_hr_attendance'))]"/>
+    </record>
+
+</odoo>
